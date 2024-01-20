@@ -1,10 +1,6 @@
 import java.time.LocalTime;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 
 public class Main {
     public static void main(String[] args) {
@@ -52,9 +48,9 @@ public class Main {
         jadwalList.add(jadwalKbB);
 
         Scheduler scheduler = new Scheduler(jadwalList, 4, 180);
-        Set<MataKuliah> mataKuliahTerpilih = scheduler.getMataKuliahTerpilih();
+        // Set<MataKuliah> mataKuliahTerpilih = scheduler.getMataKuliahTerpilih();
         
-        HashMap<MataKuliah, List<JadwalKelas>> jadwalOrderByMatkul = scheduler.getJadwalOrderByMataKuliah(mataKuliahTerpilih, jadwalList);
+        // HashMap<MataKuliah, List<JadwalKelas>> jadwalOrderByMatkul = scheduler.getJadwalOrderByMataKuliah(mataKuliahTerpilih, jadwalList);
 
         // for (Map.Entry<MataKuliah, List<JadwalKelas>> entry : jadwalOrderByMatkul.entrySet()) {
         //     MataKuliah matkul = entry.getKey();
